@@ -1,0 +1,35 @@
+
+vpc_config = {
+    vpc01 = {
+        vpc_cidr_block = "192.168.0.0/16"
+        tags = {
+            "Name": "my_vpc"
+        }
+    }
+}
+
+subnet_config = {
+    "public-us-east-1a" = {
+        cidr_block = "192.168.0.0/18",
+        availibity_zone = "us-east-1a",
+        tags ={
+            "name": "public-us-east-1a"
+        }
+    }
+
+    "public-us-east-1b" = {
+        cidr_block = "192.168.0.0/18",
+        availibity_zone = "us-east-01",
+        tags ={
+            "name": "public-us-east-01"
+        }
+    }
+
+    "private-us-east-1a" = {
+        cidr_block = "192.168.128.0/18",
+        availibity_zone = "us-east-01",
+        tags ={
+            "name": "public-us-east-01"
+        }
+    }
+}
