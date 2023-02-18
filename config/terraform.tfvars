@@ -33,3 +33,50 @@ subnet_config = {
         }
     }
 }
+
+
+internet-gateway_config = {
+    iGW_01 = {
+        vpc_name = "vpc01" 
+    }
+    tags = {
+        "Name" = "MY_IGW"
+    }
+}
+
+aws_routing_table_config = {
+
+    RT_O1 = {
+           vpc_name = "vpc01" 
+           gateway_name = "igw01"
+
+    tags = {
+        "Name" = "Public-Route"
+    }
+
+    }
+
+ 
+
+    RT_O1 = {
+           vpc_name = "vpc02" 
+           gateway_name = "igw02"
+
+    tags = {
+        "Name" = "Public-Route"
+    }
+
+    }
+
+
+    RT_O1 = {
+           vpc_name = "vpc02" 
+           gateway_name = "igw02"
+
+    tags = {
+        "Name" = "Private-Route"
+    }
+
+    }
+
+}
