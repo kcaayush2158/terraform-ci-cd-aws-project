@@ -1,0 +1,44 @@
+{
+    "Modules": [
+        {
+            "Key": "aws_nic_module",
+            "Source": "./modules/aws-nic",
+            "Dir": "./modules/aws-nic"
+        },
+        {
+            "Key": "aws_route_table_association_module",
+            "Source": "./modules/aws_route_table_association",
+            "Dir": "./modules/aws_route_table_association"
+        },
+        {
+            "Key": "aws_security_group_module",
+            "Source": "./modules/aws-security-group",
+            "Dir": "./modules/aws-security-group"
+        },
+        {
+            "Key": "aws_subnet_module",
+            "Source": "./modules/aws-subnet",
+            "Dir": "./modules/aws-subnet"
+        },
+        {
+            "Key": "aws_vpc_module",
+            "Source": "./modules/aws-vpc",
+            "Dir": "./modules/aws-vpc"
+        },
+        {
+            "Key": "",
+            "Source": "",
+            "Dir": "."
+        },
+        {
+            "Key": "aws_ec2_instance_module",
+            "Source": "./modules/aws-ec2_instance",
+            "Dir": ""
+        },
+        {
+            "Key": "aws_internet_gateway_module",
+            "Source": "./modules/aws-internetGW",
+            "Dir": ""
+        }
+    ]
+}
